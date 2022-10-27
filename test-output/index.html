@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-TestSuite" class="navigator-link ">
-                    <span>C:\Users\befis\eclipse-workspace\GoogleTNG\testng.xml</span>
+                    <span>C:\Users\befis\eclipse-workspace\GoogleTNG\crossbrowsertest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-TestSuite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -160,6 +160,92 @@
           <div class="suite-TestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">testClasses.Google</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPixelPrice">
+                  </a> <!-- getPixelPrice -->
+                  <span class="method-name">getPixelPrice</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;About&quot;}
+  (Session info: chrome=106.0.5249.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5676bf33ec7f9888e16939c85acf8be9, findElement {using=partial link text, value=About}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.120, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56250/devtoo..., se:cdpVersion: 106.0.5249.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5676bf33ec7f9888e16939c85acf8be9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pageObjects.GooglePOM.clickAbout(GooglePOM.java:54)
+	at testClasses.Google.getPixelPrice(Google.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyViewAllProductsPageTitle">
+                  </a> <!-- verifyViewAllProductsPageTitle -->
+                  <span class="method-name">verifyViewAllProductsPageTitle</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;About&quot;}
+  (Session info: chrome=106.0.5249.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [90d00e39770814b5a7696b4cd84fe365, findElement {using=partial link text, value=About}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.120, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56172/devtoo..., se:cdpVersion: 106.0.5249.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 90d00e39770814b5a7696b4cd84fe365
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pageObjects.GooglePOM.clickAbout(GooglePOM.java:54)
+	at testClasses.Google.verifyViewAllProductsPageTitle(Google.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">testClasses.Gmail</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -168,15 +254,15 @@
                   <a name="verifyLinkTerms">
                   </a> <!-- verifyLinkTerms -->
                   <span class="method-name">verifyLinkTerms</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;Terms&quot;}
-  (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=106.0.5249.120)
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [234cc35f2f901468e80b829f5e6b822d, findElement {using=xpath, value=Terms}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65128/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 234cc35f2f901468e80b829f5e6b822d
+Command: [5676bf33ec7f9888e16939c85acf8be9, findElement {using=xpath, value=Terms}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.120, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56250/devtoo..., se:cdpVersion: 106.0.5249.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5676bf33ec7f9888e16939c85acf8be9
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -194,62 +280,11 @@ Session ID: 234cc35f2f901468e80b829f5e6b822d
 	at pageObjects.GmailPOM.clickTerms(GmailPOM.java:29)
 	at testClasses.Gmail.verifyLinkTerms(Gmail.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite-class-failed -->
-          <div class="suite-TestSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testClasses.Google</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getPixelPrice">
-                  </a> <!-- getPixelPrice -->
-                  <span class="method-name">getPixelPrice</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#\/\/a\[\@mqn\-autotrack\-label\=\&apos;\/product\/pixel_7\&apos;\]&quot;}
-  (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e3720a208f47a23dfddc771a816dca1c, findElement {using=id, value=//a[@mqn-autotrack-label=&apos;/product/pixel_7&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65201/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e3720a208f47a23dfddc771a816dca1c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at pageObjects.GooglePOM.selectPixel7(GooglePOM.java:89)
-	at testClasses.Google.getPixelPrice(Google.java:78)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyViewAllProductsPageTitle">
-                  </a> <!-- verifyViewAllProductsPageTitle -->
-                  <span class="method-name">verifyViewAllProductsPageTitle</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String, com.aventstack.extentreports.model.Media)&quot; because &quot;this.logger&quot; is null
-	at testClasses.Google.verifyViewAllProductsPageTitle(Google.java:68)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -266,10 +301,43 @@ Session ID: e3720a208f47a23dfddc771a816dca1c
                   <a name="befisTest">
                   </a> <!-- befisTest -->
                   <span class="method-name">befisTest</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipped the test case
-	at testClasses.Google.befisTest(Google.java:84)
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5676bf33ec7f9888e16939c85acf8be9, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.120, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56250/devtoo..., se:cdpVersion: 106.0.5249.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5676bf33ec7f9888e16939c85acf8be9
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:454)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:293)
+	at testClasses.Google.closeBrowser(Google.java:54)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	... 34 more
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 3 more
+... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -293,13 +361,13 @@ Session ID: e3720a208f47a23dfddc771a816dca1c
         </div> <!-- panel TestSuite -->
         <div panel-name="test-xml-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\befis\eclipse-workspace\GoogleTNG\testng.xml</span>
+            <span class="header-content">C:\Users\befis\eclipse-workspace\GoogleTNG\crossbrowsertest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;TestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;groups&gt;
     &lt;run&gt;
       &lt;include name=&quot;Smoke&quot;/&gt;
@@ -317,12 +385,18 @@ Session ID: e3720a208f47a23dfddc771a816dca1c
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.ExtentListenerClass&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;GoogleProject&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;BrowserType&quot; value=&quot;CH&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testClasses.Gmail&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;BrowserType&quot; value=&quot;MF&quot;/&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;testClasses.Google&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- GoogleProject --&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -334,7 +408,10 @@ Session ID: e3720a208f47a23dfddc771a816dca1c
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">GoogleProject (2 classes)</span>
+                <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">FirefoxTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -398,21 +475,21 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getPixelPrice')
-data.setCell(0, 2, 'testClasses.Google')
-data.setCell(0, 3, 19087);
+data.setCell(0, 1, 'verifyLinkTerms')
+data.setCell(0, 2, 'testClasses.Gmail')
+data.setCell(0, 3, 26036);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLinkTerms')
+data.setCell(1, 1, 'verifyLearnMorePageTitle')
 data.setCell(1, 2, 'testClasses.Gmail')
-data.setCell(1, 3, 5045);
+data.setCell(1, 3, 6640);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLearnMorePageTitle')
-data.setCell(2, 2, 'testClasses.Gmail')
-data.setCell(2, 3, 1729);
+data.setCell(2, 1, 'verifyViewAllProductsPageTitle')
+data.setCell(2, 2, 'testClasses.Google')
+data.setCell(2, 3, 5951);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyViewAllProductsPageTitle')
+data.setCell(3, 1, 'getPixelPrice')
 data.setCell(3, 2, 'testClasses.Google')
-data.setCell(3, 3, 1221);
+data.setCell(3, 3, 5801);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'befisTest')
 data.setCell(4, 2, 'testClasses.Google')
@@ -421,7 +498,7 @@ window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-Test
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -447,75 +524,101 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testClasses.Gmail</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testClasses.Google</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyLearnMorePageTitle</span>
-                <span class="method-start">2975 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">4714 ms</span>
-              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Gmail</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startBrowser</span>
-                <span class="method-start">4913 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Google</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyLinkTerms</span>
-                <span class="method-start">6954 ms</span>
+                <span class="method-name">verifyViewAllProductsPageTitle</span>
+                <span class="method-start">4551 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Gmail</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLearnMorePageTitle</span>
+                <span class="method-start">5451 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Google</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">12160 ms</span>
+                <span class="method-start">10803 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Gmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">12092 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">17287 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testClasses.Google</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startBrowser</span>
-                <span class="method-start">12348 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyViewAllProductsPageTitle</span>
-                <span class="method-start">13857 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">15269 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">15457 ms</span>
+                <span class="method-start">17287 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getPixelPrice</span>
-                <span class="method-start">17230 ms</span>
+                <span class="method-start">19893 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Gmail</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLinkTerms</span>
+                <span class="method-start">20643 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Google</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">36515 ms</span>
+                <span class="method-start">79070 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startBrowser</span>
-                <span class="method-start">36765 ms</span>
+                <span class="method-start">104142 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">befisTest</span>
-                <span class="method-start">38300 ms</span>
+                <span class="method-start">105740 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">38301 ms</span>
+                <span class="method-start">105743 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Gmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">111448 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

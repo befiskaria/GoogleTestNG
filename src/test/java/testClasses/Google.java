@@ -1,5 +1,8 @@
 package testClasses;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,6 +13,9 @@ import org.testng.asserts.SoftAssert;
 import pageObjects.GooglePOM;
 import utils.Base;
 import utils.ExtentListenerClass;
+
+import static java.lang.Thread.currentThread;
+import static utils.ExtentListenerClass.takeScreenshot;
 
 @Listeners(ExtentListenerClass.class)
 public class Google extends Base {
@@ -61,12 +67,17 @@ public class Google extends Base {
 	 */
 	@Test(priority = 1, enabled = true, groups = { "Regression" })
 	public void verifyViewAllProductsPageTitle() throws Exception {
+		System.out.println(currentThread().getId());
 		gp.clickAbout();
+		takeScreenshot();
 		gp.verifyViewProductsTitle();
+		//test.pass( "", MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(driver)).build());
+
 	}
 
 	@Test(priority = 2, enabled = true, groups = { "Sanity" })
 	public void getPixelPrice() throws Exception {
+		System.out.println(currentThread().getId());
 		gp.clickAbout();
 		gp.clickViewProducts();
 		gp.clickShopstore();
@@ -77,9 +88,8 @@ public class Google extends Base {
 
 	@Test(priority = 3, enabled = true, groups = { "Regression" })
 	public void befisTest() throws Exception {
+		System.out.println(currentThread().getId());
 		throw new SkipException("Skipped the test case");
 		// gp.clickTerms();
-		// extentTest.log(Status.INFO, "",
-		// MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(driver)).build());
 	}
 }

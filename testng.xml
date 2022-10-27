@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TestSuite">
+<suite name="TestSuite" parallel="tests" thread-count="2">
 	<groups>
 		<run>
-			<include name="Smoke" />
+			<exclude name="Smoke" />
 			<include name="Regression" />
-			<include name="Sanity" />
+			<exclude name="Sanity" />
 		</run>
 	</groups>
 	<listeners>
-		<listener class-name="utils.ExtentListenerClass"></listener>
+		<listener class-name="utils.ExtentListenerClass"/>
 	</listeners>
 	<test name="GoogleProject">
 		<classes>

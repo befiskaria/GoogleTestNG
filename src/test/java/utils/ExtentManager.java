@@ -5,19 +5,20 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentManager extends Base {
 	private static ExtentReports extent;
 
-	public static ExtentReports getInstance() {
+	public static ExtentReports getInstance() throws Exception {
 		if (extent == null)
 			createInstance();
 		return extent;
 	}
 
-	public static ExtentReports createInstance() {
+	public static ExtentReports createInstance() throws Exception {
 		String fileName = getReportName();
 		String directory = System.getProperty("user.dir") + ".//Report//";
 		new File(directory).mkdirs();
@@ -30,8 +31,8 @@ public class ExtentManager extends Base {
 		spark.config().setTheme(Theme.STANDARD);
 
 		extent = new ExtentReports();
-		extent.setSystemInfo("Project", Config.getProperty("Project"));
-		extent.setSystemInfo("Browser", Config.getProperty("Browser"));
+		extent.setSystemInfo("Project", ExcelReaderHM.getValue("Project"));
+		extent.setSystemInfo("Browser", ExcelReaderHM.getValue("Browser"));
 		extent.attachReporter(spark);
 
 		return extent;

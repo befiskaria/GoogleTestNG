@@ -21,7 +21,16 @@ import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 public class ExtentListenerClass extends Base implements ITestListener {
-	private static ExtentReports extent = ExtentManager.createInstance();
+	private static ExtentReports extent;
+
+	static {
+		try {
+			extent = ExtentManager.createInstance();
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+
 	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 
 	public void onTestStart(ITestResult result) {
@@ -66,7 +75,15 @@ public class ExtentListenerClass extends Base implements ITestListener {
 			extent.flush();
 		}
 	}
-
+	public static void takeScreenshot(){
+		try {
+			extentTest.get().pass("<b><font color=blue>" + "Screenshot captured.." + "</font></b>",
+					MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(driver)).build());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public static String captureScreenshot(WebDriver driver, ITestResult result) {
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
