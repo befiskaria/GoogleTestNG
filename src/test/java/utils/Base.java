@@ -59,8 +59,8 @@ public class Base {
     }
 
     public static void browserConfig() {
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Timeutils.Timeout));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Timeutils.Timeout));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Timeutils.pageTimeout));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Timeutils.elementTimeout));
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
     }
