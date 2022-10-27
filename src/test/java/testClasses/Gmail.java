@@ -57,7 +57,6 @@ public class Gmail extends Base {
 
 	@Test(priority = 1, enabled = true, groups = { "Regression" })
 	public void verifyLearnMorePageTitle() throws Exception {
-		System.out.println(currentThread().getId());
 		gm.clickLearnMore();
 		gm.SwitchToNewTab();
 		Thread.sleep(1000);
@@ -68,7 +67,6 @@ public class Gmail extends Base {
 
 	@Test(priority = 2, enabled = true, groups = { "Smoke", "Sanity" })
 	public void verifyLinkTerms() throws Exception {
-		System.out.println(currentThread().getId());
 		gm.clickTerms();
 		// extentTest.log(Status.INFO, "",
 		// MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot(driver)).build());

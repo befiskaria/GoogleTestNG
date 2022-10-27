@@ -67,7 +67,6 @@ public class Google extends Base {
 	 */
 	@Test(priority = 1, enabled = true, groups = { "Regression" })
 	public void verifyViewAllProductsPageTitle() throws Exception {
-		System.out.println(currentThread().getId());
 		gp.clickAbout();
 		takeScreenshot();
 		gp.verifyViewProductsTitle();
@@ -77,7 +76,6 @@ public class Google extends Base {
 
 	@Test(priority = 2, enabled = true, groups = { "Sanity" })
 	public void getPixelPrice() throws Exception {
-		System.out.println(currentThread().getId());
 		gp.clickAbout();
 		gp.clickViewProducts();
 		gp.clickShopstore();
@@ -88,7 +86,6 @@ public class Google extends Base {
 
 	@Test(priority = 3, enabled = true, groups = { "Regression" })
 	public void befisTest() throws Exception {
-		System.out.println(currentThread().getId());
 		throw new SkipException("Skipped the test case");
 		// gp.clickTerms();
 	}
