@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="1" failed="3" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-27T04:14:23 EDT" name="TestSuite" finished-at="2022-10-27T04:15:01 EDT" duration-ms="38513">
+    <groups>
+      <group name="Sanity">
+        <method signature="Google.getPixelPrice()[pri:2, instance:testClasses.Google@465232e9]" name="getPixelPrice" class="testClasses.Google"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="Gmail.verifyLearnMorePageTitle()[pri:1, instance:testClasses.Gmail@57db2b13]" name="verifyLearnMorePageTitle" class="testClasses.Gmail"/>
+        <method signature="Google.verifyViewAllProductsPageTitle()[pri:1, instance:testClasses.Google@465232e9]" name="verifyViewAllProductsPageTitle" class="testClasses.Google"/>
+        <method signature="Gmail.verifyLinkTerms()[pri:2, instance:testClasses.Gmail@57db2b13]" name="verifyLinkTerms" class="testClasses.Gmail"/>
+        <method signature="Google.befisTest()[pri:3, instance:testClasses.Google@465232e9]" name="befisTest" class="testClasses.Google"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="Gmail.verifyLinkTerms()[pri:2, instance:testClasses.Gmail@57db2b13]" name="verifyLinkTerms" class="testClasses.Gmail"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-10-27T04:14:23 EDT" name="GoogleProject" finished-at="2022-10-27T04:15:01 EDT" duration-ms="38513">
+      <class name="testClasses.Gmail">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testClasses.Gmail@57db2b13]" started-at="2022-10-27T04:14:23 EDT" name="startBrowser" finished-at="2022-10-27T04:14:26 EDT" duration-ms="2974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="verifyLearnMorePageTitle()[pri:1, instance:testClasses.Gmail@57db2b13]" started-at="2022-10-27T04:14:26 EDT" name="verifyLearnMorePageTitle" finished-at="2022-10-27T04:14:28 EDT" duration-ms="1729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLearnMorePageTitle -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.Gmail@57db2b13]" started-at="2022-10-27T04:14:28 EDT" name="closeBrowser" finished-at="2022-10-27T04:14:28 EDT" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testClasses.Gmail@57db2b13]" started-at="2022-10-27T04:14:28 EDT" name="startBrowser" finished-at="2022-10-27T04:14:30 EDT" duration-ms="2041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="verifyLinkTerms()[pri:2, instance:testClasses.Gmail@57db2b13]" started-at="2022-10-27T04:14:30 EDT" name="verifyLinkTerms" finished-at="2022-10-27T04:14:35 EDT" duration-ms="5045" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"Terms"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'BEFISPC', ip: '192.168.1.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [234cc35f2f901468e80b829f5e6b822d, findElement {using=xpath, value=Terms}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65128/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 234cc35f2f901468e80b829f5e6b822d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"Terms"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'BEFISPC', ip: '192.168.1.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [234cc35f2f901468e80b829f5e6b822d, findElement {using=xpath, value=Terms}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65128/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 234cc35f2f901468e80b829f5e6b822d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at pageObjects.GmailPOM.clickTerms(GmailPOM.java:29)
+at testClasses.Gmail.verifyLinkTerms(Gmail.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkTerms -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.Gmail@57db2b13]" started-at="2022-10-27T04:14:35 EDT" name="closeBrowser" finished-at="2022-10-27T04:14:35 EDT" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testClasses.Gmail -->
+      <class name="testClasses.Google">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testClasses.Google@465232e9]" started-at="2022-10-27T04:14:35 EDT" name="startBrowser" finished-at="2022-10-27T04:14:37 EDT" duration-ms="1508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="verifyViewAllProductsPageTitle()[pri:1, instance:testClasses.Google@465232e9]" started-at="2022-10-27T04:14:37 EDT" name="verifyViewAllProductsPageTitle" finished-at="2022-10-27T04:14:38 EDT" duration-ms="1221" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String, com.aventstack.extentreports.model.Media)" because "this.logger" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String, com.aventstack.extentreports.model.Media)" because "this.logger" is null
+at testClasses.Google.verifyViewAllProductsPageTitle(Google.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyViewAllProductsPageTitle -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.Google@465232e9]" started-at="2022-10-27T04:14:38 EDT" name="closeBrowser" finished-at="2022-10-27T04:14:38 EDT" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testClasses.Google@465232e9]" started-at="2022-10-27T04:14:38 EDT" name="startBrowser" finished-at="2022-10-27T04:14:40 EDT" duration-ms="1772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="getPixelPrice()[pri:2, instance:testClasses.Google@465232e9]" started-at="2022-10-27T04:14:40 EDT" name="getPixelPrice" finished-at="2022-10-27T04:14:59 EDT" duration-ms="19087" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/a\[\@mqn\-autotrack\-label\=\'\/product\/pixel_7\'\]"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'BEFISPC', ip: '192.168.1.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3720a208f47a23dfddc771a816dca1c, findElement {using=id, value=//a[@mqn-autotrack-label='/product/pixel_7']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65201/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e3720a208f47a23dfddc771a816dca1c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/a\[\@mqn\-autotrack\-label\=\'\/product\/pixel_7\'\]"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'BEFISPC', ip: '192.168.1.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3720a208f47a23dfddc771a816dca1c, findElement {using=id, value=//a[@mqn-autotrack-label='/product/pixel_7']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65201/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e3720a208f47a23dfddc771a816dca1c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at pageObjects.GooglePOM.selectPixel7(GooglePOM.java:89)
+at testClasses.Google.getPixelPrice(Google.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPixelPrice -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.Google@465232e9]" started-at="2022-10-27T04:14:59 EDT" name="closeBrowser" finished-at="2022-10-27T04:15:00 EDT" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testClasses.Google@465232e9]" started-at="2022-10-27T04:15:00 EDT" name="startBrowser" finished-at="2022-10-27T04:15:01 EDT" duration-ms="1535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="befisTest()[pri:3, instance:testClasses.Google@465232e9]" started-at="2022-10-27T04:15:01 EDT" name="befisTest" finished-at="2022-10-27T04:15:01 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipped the test case]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipped the test case
+at testClasses.Google.befisTest(Google.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befisTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.Google@465232e9]" started-at="2022-10-27T04:15:01 EDT" name="closeBrowser" finished-at="2022-10-27T04:15:01 EDT" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testClasses.Google -->
+    </test> <!-- GoogleProject -->
+  </suite> <!-- TestSuite -->
+</testng-results>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TestSuite" class="navigator-link">
+              <span class="suite-name border-failed">TestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TestSuite" class="navigator-link ">
+                    <span>C:\Users\befis\eclipse-workspace\GoogleTNG\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TestSuite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 3 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="testClasses.Google" class="method navigator-link" hash-for-method="getPixelPrice">getPixelPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="testClasses.Gmail" class="method navigator-link" hash-for-method="verifyLinkTerms">verifyLinkTerms</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="testClasses.Google" class="method navigator-link" hash-for-method="verifyViewAllProductsPageTitle">verifyViewAllProductsPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods skipped suite-TestSuite"> (hide)</a> <!-- hide-methods skipped suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods skipped suite-TestSuite"> (show)</a> <!-- show-methods skipped suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="testClasses.Google" class="method navigator-link" hash-for-method="befisTest">befisTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods passed suite-TestSuite"> (hide)</a> <!-- hide-methods passed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods passed suite-TestSuite"> (show)</a> <!-- show-methods passed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="testClasses.Gmail" class="method navigator-link" hash-for-method="verifyLearnMorePageTitle">verifyLearnMorePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestSuite" class="panel TestSuite">
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testClasses.Gmail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLinkTerms">
+                  </a> <!-- verifyLinkTerms -->
+                  <span class="method-name">verifyLinkTerms</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;Terms&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [234cc35f2f901468e80b829f5e6b822d, findElement {using=xpath, value=Terms}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65128/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 234cc35f2f901468e80b829f5e6b822d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pageObjects.GmailPOM.clickTerms(GmailPOM.java:29)
+	at testClasses.Gmail.verifyLinkTerms(Gmail.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testClasses.Google</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPixelPrice">
+                  </a> <!-- getPixelPrice -->
+                  <span class="method-name">getPixelPrice</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#\/\/a\[\@mqn\-autotrack\-label\=\&apos;\/product\/pixel_7\&apos;\]&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3720a208f47a23dfddc771a816dca1c, findElement {using=id, value=//a[@mqn-autotrack-label=&apos;/product/pixel_7&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65201/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e3720a208f47a23dfddc771a816dca1c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pageObjects.GooglePOM.selectPixel7(GooglePOM.java:89)
+	at testClasses.Google.getPixelPrice(Google.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyViewAllProductsPageTitle">
+                  </a> <!-- verifyViewAllProductsPageTitle -->
+                  <span class="method-name">verifyViewAllProductsPageTitle</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String, com.aventstack.extentreports.model.Media)&quot; because &quot;this.logger&quot; is null
+	at testClasses.Google.verifyViewAllProductsPageTitle(Google.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testClasses.Google</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="befisTest">
+                  </a> <!-- befisTest -->
+                  <span class="method-name">befisTest</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipped the test case
+	at testClasses.Google.befisTest(Google.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-skipped -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testClasses.Gmail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLearnMorePageTitle">
+                  </a> <!-- verifyLearnMorePageTitle -->
+                  <span class="method-name">verifyLearnMorePageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+        </div> <!-- panel TestSuite -->
+        <div panel-name="test-xml-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\befis\eclipse-workspace\GoogleTNG\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Smoke&quot;/&gt;
+      &lt;include name=&quot;Regression&quot;/&gt;
+      &lt;include name=&quot;Sanity&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Smoke&quot;/&gt;
+      &lt;include name=&quot;Regression&quot;/&gt;
+      &lt;include name=&quot;Sanity&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.ExtentListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;GoogleProject&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testClasses.Gmail&quot;/&gt;
+      &lt;class name=&quot;testClasses.Google&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GoogleProject --&gt;
+&lt;/suite&gt; &lt;!-- TestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">GoogleProject (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">befisTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLearnMorePageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLinkTerms</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyViewAllProductsPageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getPixelPrice</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLinkTerms</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestSuite');
+function tableData_TestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getPixelPrice')
+data.setCell(0, 2, 'testClasses.Google')
+data.setCell(0, 3, 19087);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLinkTerms')
+data.setCell(1, 2, 'testClasses.Gmail')
+data.setCell(1, 3, 5045);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLearnMorePageTitle')
+data.setCell(2, 2, 'testClasses.Gmail')
+data.setCell(2, 3, 1729);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyViewAllProductsPageTitle')
+data.setCell(3, 2, 'testClasses.Google')
+data.setCell(3, 3, 1221);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'befisTest')
+data.setCell(4, 2, 'testClasses.Google')
+data.setCell(4, 3, 0);
+window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <div id="times-div-TestSuite">
+              </div> <!-- times-div-TestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Gmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLearnMorePageTitle</span>
+                <span class="method-start">2975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">4714 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">4913 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLinkTerms</span>
+                <span class="method-start">6954 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">12160 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.Google</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">12348 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyViewAllProductsPageTitle</span>
+                <span class="method-start">13857 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">15269 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">15457 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getPixelPrice</span>
+                <span class="method-start">17230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">36515 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">36765 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">befisTest</span>
+                <span class="method-start">38300 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">38301 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

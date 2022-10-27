@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">TestSuite</th></tr>
+<tr><td><a href="#t0">GoogleProject</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">38,513</td><td>Sanity, Regression, Smoke</td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GoogleProject &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testClasses.Gmail</td><td><a href="#m0">verifyLinkTerms</a></td><td rowspan="1">1666858470419</td><td rowspan="1">5045</td></tr><tr class="failedodd"><td rowspan="2">testClasses.Google</td><td><a href="#m1">getPixelPrice</a></td><td rowspan="1">1666858480695</td><td rowspan="1">19087</td></tr><tr class="failedodd"><td><a href="#m2">verifyViewAllProductsPageTitle</a></td><td rowspan="1">1666858477322</td><td rowspan="1">1221</td></tr><tr><th colspan="4">GoogleProject &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testClasses.Google</td><td><a href="#m3">befisTest</a></td><td rowspan="1">1666858501765</td><td rowspan="1">0</td></tr><tr><th colspan="4">GoogleProject &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testClasses.Gmail</td><td><a href="#m4">verifyLearnMorePageTitle</a></td><td rowspan="1">1666858466440</td><td rowspan="1">1729</td></tr></tbody>
+</table>
+<h2>GoogleProject</h2><h3 id="m0">testClasses.Gmail#verifyLinkTerms</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;Terms&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [234cc35f2f901468e80b829f5e6b822d, findElement {using=xpath, value=Terms}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65128/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 234cc35f2f901468e80b829f5e6b822d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pageObjects.GmailPOM.clickTerms(GmailPOM.java:29)
+	at testClasses.Gmail.verifyLinkTerms(Gmail.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testClasses.Google#getPixelPrice</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#\/\/a\[\@mqn\-autotrack\-label\=\&apos;\/product\/pixel_7\&apos;\]&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;BEFISPC&apos;, ip: &apos;192.168.1.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3720a208f47a23dfddc771a816dca1c, findElement {using=id, value=//a[@mqn-autotrack-label=&apos;/product/pixel_7&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\befis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65201/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e3720a208f47a23dfddc771a816dca1c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pageObjects.GooglePOM.selectPixel7(GooglePOM.java:89)
+	at testClasses.Google.getPixelPrice(Google.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testClasses.Google#verifyViewAllProductsPageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String, com.aventstack.extentreports.model.Media)&quot; because &quot;this.logger&quot; is null
+	at testClasses.Google.verifyViewAllProductsPageTitle(Google.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testClasses.Google#befisTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipped the test case
+	at testClasses.Google.befisTest(Google.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testClasses.Gmail#verifyLearnMorePageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

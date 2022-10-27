@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+	<groups>
+		<run>
+			<include name="Smoke" />
+			<include name="Regression" />
+			<include name="Sanity" />
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name="utils.ExtentListenerClass"></listener>
+	</listeners>
+	<test name="GoogleProject">
+		<classes>
+			<class name="testClasses.Gmail" />
+			<class name="testClasses.Google" />
+		</classes>
+	</test> <!-- GoogleProject -->
+</suite> <!-- TestSuite -->
